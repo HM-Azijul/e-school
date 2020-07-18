@@ -1,0 +1,363 @@
+/* ====================================================
+  Template Name: E-School HTML Template
+  Template URI: https://github.com/HM-Azijul
+  Description: E-School HTML Template(Clone by Azijul for practice Purpose)
+
+  Author: HM Azijul
+  Author URI: http://www.hmazijul.com
+  version: 1.0
+==================================================== */
+
+/* CSS Index
+------------------------------------
+01. template default css
+02. section default css
+03. header css
+04. home css
+05. features css 
+06. courses css
+07. testimonial css
+08. footer css 
+*/
+
+/* ====================================================
+  Google Fonts
+==================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap');
+
+/* ..................................
+ 01. template default css 
+.................................. */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+a,
+.button {
+  transition: all 0.3s ease-out 0s;
+}
+
+a:focus,
+.btn:focus {
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
+}
+
+p {
+  line-height: 30px;
+  color: #000;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.form-control:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+/* ====================================================
+   Author's custom styles
+   ==================================================== */
+
+/*...................................
+    02. section default css
+................................... */
+a:hover {
+  color: #21b573;
+  transition: .3s;
+}
+
+.section-padding {
+  padding: 45px 0;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #000;
+  text-align: center;
+}
+
+.section-btn {
+  width: 104px;
+  height: 43px;
+  line-height: 43px;
+  font-size: 16px;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  border-radius: 33px;
+  background-color: #21b573;
+  border: 1px solid transparent;
+  color: #fff;
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.section-btn:hover {
+  background: transparent;
+  border: 1px solid #21b573;
+  transition: 0.3s;
+  color: #21b573;
+}
+
+/*...................................
+    03. header css
+................................... */
+header {
+  padding-top: 20px;
+  background: #f0fff0;
+}
+
+header .navbar-brand img {
+  width: 200px;
+}
+
+.nav-item {
+  text-transform: capitalize;
+  margin-right: 35px;
+  color: #000;
+}
+
+.navbar-toggler .nav-icon:hover,
+.navbar-toggler .nav-icon.active {
+  color: #21b573;
+}
+
+/* ..................................
+ 04. home css 
+.................................. */
+#home {
+  background: #f0fff0;
+  padding: 65px 0;
+}
+
+#home .left span {
+  color: #fd511a;
+}
+
+#home .left h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 70px;
+}
+
+#home .left h1 span {
+  color: #21b573;
+}
+
+#home .left p {
+  color: #6c6b6b;
+  margin-top: 20px;
+}
+
+#home .section-btn {
+  width: 153px;
+  height: 43px;
+  border-radius: 33px;
+  margin-top: 10px;
+}
+
+/* ..................................
+ 05. features css 
+.................................. */
+#features {
+  padding: 42px 0 105px 0;
+}
+
+.features-item {
+  background: #f8fffb;
+  text-align: center;
+  padding: 50px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.features-item-1 img {
+  width: 66px;
+}
+
+.features-item-2 img {
+  width: 80px;
+}
+
+.features-item-3 img {
+  width: 75px;
+}
+
+.features-item-4 img {
+  width: 68px;
+}
+
+.features-item h4 {
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #413960;
+  padding-top: 22px;
+}
+
+.features-item p {
+  line-height: 16px;
+  text-transform: capitalize;
+  color: #585859;
+}
+
+.features-item:hover,
+.features-item.active {
+  background: #ffffff;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* ..................................
+ 06. courses css 
+.................................. */
+.courses {
+  padding-bottom: 88px;
+}
+
+.courses .section-title {
+  margin-bottom: 55px;
+}
+
+.course-item {
+  text-transform: capitalize;
+  padding: 25px 20px;
+  background: #ffffff;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 18px;
+}
+
+.course-item .cours-image {
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.course-item .cours-image img:hover {
+  transform: scale(1.2);
+  transition: 2s;
+}
+
+.course-item .title {
+  display: block;
+  font-weight: 500;
+  font-size: 24px;
+  color: #413960;
+  padding-top: 19px;
+}
+
+.course-item .title:hover {
+  color: #21b573;
+}
+
+.course-item span {
+  color: #585859;
+}
+
+.course-item .section-btn {
+  width: 137px;
+  height: 35px;
+  line-height: 34px;
+  display: block;
+  margin-top: 19px;
+}
+
+.course-item .meta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 34px;
+}
+
+.course-item .meta li i {
+  padding-right: 6px;
+}
+
+/* ..................................
+ 07. testimonial css 
+.................................. */
+.testimonial {
+  margin-bottom: 100px;
+}
+
+.testimonial-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.testimonial-item img {
+  width: 120px;
+  height: 120px;
+  margin-right: 50px;
+}
+
+/* ..................................
+ 08. footer css 
+.................................. */
+footer {
+  background: #282531;
+  padding: 48px 0 28px 0;
+}
+
+.footer-item {
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.footer-item p {
+  color: #fff;
+}
+
+.footer-item .title {
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+
+.footer-item ul li {
+  font-size: 16px;
+  font-weight: 300;
+  display: block;
+  padding-top: 5px;
+}
+
+footer .copyright {
+  display: block;
+  text-align: center;
+  font-weight: 300;
+  color: #CDCDCD;
+  padding-top: 70px;
+}
